@@ -1,4 +1,4 @@
-virt-env
+virtual-env
 __pycache__
 **/__pycache__
 .env

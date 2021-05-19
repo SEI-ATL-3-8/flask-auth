@@ -18,6 +18,7 @@ const Signup = (props) => {
     })
     .catch((err) => {
       setError(err.response.data.message)
+      // console.log(err);
     })
   }
   
@@ -26,7 +27,7 @@ const Signup = (props) => {
       <h2>Sign up for an accout!</h2>
 
       { error && 
-      <div className="error">{error}</div>}
+      <div className="error">{error}</div> }
       
       <form onSubmit={handleSubmit}>
         <div>
