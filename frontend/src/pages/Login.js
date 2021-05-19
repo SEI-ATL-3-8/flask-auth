@@ -14,7 +14,7 @@ const Login = (props) => {
     })
     .then((response) => {
       props.setUser(response.data.user)
-      localStorage.setItem('userId', response.data.user.id)
+      localStorage.setItem('userId', response.data.user_id)
     })
     .catch((err) => {
       setError(err.response.data.message)
